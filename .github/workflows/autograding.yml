@@ -31,7 +31,7 @@ jobs:
           echo "Тесты доступны"
 
       - name: Checkout student code
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v7
         with:
           repository: ${{ github.event.pull_request.head.repo.full_name }}
           ref: ${{ github.event.pull_request.head.sha }}
