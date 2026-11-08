@@ -40,6 +40,7 @@ jobs:
           persist-credentials: false
           submodules: false
           lfs: false
+          allow-unsafe-pr-checkout: true
 
       - name: Checkout reference
         uses: actions/checkout@v4.2.2
