@@ -135,7 +135,7 @@ jobs:
             -e PYTHONDONTWRITEBYTECODE=1 \
             -e GRADING_OUTPUT_DIR=/output \
             test-runner:local \
-            python -B -E -m reference.tests.test_summary
+            python -B -m reference.tests.test_summary
 
       - name: Verify grading.json exists
         if: always()
